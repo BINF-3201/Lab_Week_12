@@ -159,3 +159,46 @@ squeue -u username
 
 ## Step 4 - Figure out what species you have
 
+While we wait for the genome anntotation to complete, we can figure out what species you have!
+
+We will use the ITS sequence: https://en.wikipedia.org/wiki/Fungal_DNA_barcoding
+
+### Step 4a - Install the ITS extraction program
+
+```
+module purge
+module load anaconda3
+conda create -n extract_its bioconda::itsx bioconda::barrnap conda-forge::biopython conda-forge::pandas conda-forge::git
+```
+At some point you will see a prompt that says "Proceed ([y]/n)"
+
+Type `y` and hit enter. Once it is done, move to the next step.
+
+```
+conda activate extract_its
+git clone https://github.com/fantin-mesny/Extract-ITS-sequences-from-a-fungal-genome
+```
+
+### Step 4b - Find the ITS sequence
+
+run the script below
+
+```
+python Extract-ITS-sequences-from-a-fungal-genome/extractITS.py -which ITS2 -i ABB_052825_01_A.masked.fasta -o ITS/ -name ABB_052825_01_A
+
+```
+
+## Step 4c - BLAST the ITS Sequence
+
+Open the ITS fasta file in the `ITS` folder and copy the sequences 
+
+Go to blastn and see what species you have! https://blast.ncbi.nlm.nih.gov/Blast.cgi?PROGRAM=blastn 
+
+# Question 15 
+What is the Scientific name of the species with the closest ITS2 sequence to your sample?
+
+# Question 16
+How similar (Percent Identity) is your ITS2 sequence to the reference?
+
+
+&nbsp;
