@@ -2,7 +2,9 @@
 
 We have genomes! 
 
-Follow the steps below carefully to learn about your yeast genome. 
+Follow the steps below carefully to learn about your yeast genome.
+
+To see if your genome produced an assembly and to claim a new assembly see: https://docs.google.com/spreadsheets/d/1PiV7-Z9uCXiHiEISPdSghbimry6PGHDkzAp1SUDqMzw/edit?usp=sharing 
 
 ## Step 1 - Learn about the genome assembly process
 
