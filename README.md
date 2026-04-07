@@ -190,7 +190,7 @@ git clone https://github.com/fantin-mesny/Extract-ITS-sequences-from-a-fungal-ge
 run the script below
 
 ```
-python Extract-ITS-sequences-from-a-fungal-genome/extractITS.py -which ITS2 -i ABB_052825_01_A.masked.fasta -o ITS/ -name ABB_052825_01_A
+python Extract-ITS-sequences-from-a-fungal-genome/extractITS.py -which ITS2 -i <NAME>.masked.fasta -o ITS/ -name <NAME>
 
 ```
 
